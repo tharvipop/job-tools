@@ -52,9 +52,10 @@ if __name__ == "__main__":
     input_pdf = args.input_pdf
     company_name = args.company_name
     word_to_replace = args.word_to_replace
+    replacement_word = f"{company_name},"  # add , to the company names
     
     output_pdf = f"{company_name}_CL.pdf"  # Custom name for the output PDF file
     
-    edit_pdf(input_pdf, output_pdf, word_to_replace, company_name)
+    edit_pdf(input_pdf, output_pdf, word_to_replace, replacement_word)
     print(f"PDF saved as: {output_pdf}")
 
